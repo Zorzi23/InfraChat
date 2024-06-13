@@ -1,0 +1,17 @@
+
+input[type='text'] {
+    background: none;
+    color: var(--font-color-input-text);
+    border: 0;
+    border-bottom: 1px solid var(--background-color-contrast-level-2);
+    outline: none;
+    padding: 2px;
+    width: 100%;
+}
+    
+.default-input-text-container {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    gap: 0.5em;
+}

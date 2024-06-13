@@ -1,0 +1,45 @@
+
+
+.modal-default-chat {
+    display: grid;
+    grid-template-rows: max-content;
+    width: 350px;
+    height: 350px;
+    border: unset;
+    border-radius: 5%;
+    background: var(--background-color);
+    color: var(--font-color-modal);
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+.modal-default-chat::backdrop {
+    background-color: #000000a1;
+}
+
+.section-header-modal-default-chat {
+    border-bottom: 1px solid var(--background-color-contrast-level-1);
+    padding-block: 10px;
+    font-weight: 600;
+    height: fit-content;
+}
+
+.section-content-modal-default-chat {
+    min-height: 215px;
+    display: flex;
+    align-content: flex-start;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding-block: 1em;
+}
+
+.section-footer-modal-default-chat {
+    display: grid;
+    border-top: 1px solid var(--background-color-contrast-level-1);
+    padding: 10px;
+    justify-content: end;
+    align-items: center;
+    grid-template-columns: max-content max-content;
+    gap: 0.5em;
+    padding-inline: unset;
+}

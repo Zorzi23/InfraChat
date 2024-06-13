@@ -1,0 +1,17 @@
+
+:root {
+  --background-color: #282828;
+  --background-color-contrast-level-1: #444444;
+  --background-color-contrast-level-2: #949494;
+  --self-user-color: #8bb8ff;
+  --enter-user-box-color: #8bb8ff;
+  --exit-user-box-color: #ff9463;
+  --font-color-input-text: whitesmoke;
+  --font-color-default: black;
+  --font-color-side-bar: white;
+  --font-color-modal: white;
+}
+
+.color-contrast-blue {
+    color: var(--enter-user-box-color);
+}
