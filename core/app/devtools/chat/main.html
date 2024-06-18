@@ -5,21 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
     <link rel="shortcut icon" href="icons/favicon.svg" type="image/xml+svg">
-    <script src="behaviors/LocalStorageRepository.js"></script>
-    <script src="behaviors/Network.js"></script>
-    <script src="behaviors/Message.js"></script>
-    <script src="behaviors/SocketConnection.js"></script>
-    <script src="behaviors/WebRtcApi.js"></script>
-    <script src="behaviors/ModalFormNewChat.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/colors.css">
-    <link rel="stylesheet" type="text/css" href="styles/fonts.css">
-    <link rel="stylesheet" type="text/css" href="styles/button.css">
-    <link rel="stylesheet" type="text/css" href="styles/input.css">
-    <link rel="stylesheet" type="text/css" href="styles/modal.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="behaviors/struct/autoload/AutoLoadBehavior.js"></script>
+    <script src="behaviors/load.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/est/import.css">
 </head>
 <body>
-    <aside class="side-bar">
+    <nav class="side-bar">
         <div class="side-bar-header">
             <div class="toggle-side-bar-container">
                 <label class="toggle-side-bar">
@@ -30,19 +21,16 @@
                     </svg>
                 </label>
             </div>
-            <button title="Add Contact" class="add-button-1" id="add-contact">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" class="icon">
-                <path class="circle" d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke-width="1.5"></path>
-                <path class="line" d="M8 12H16" stroke-width="1.5"></path>
-                <path class="line" d="M12 16V8" stroke-width="1.5"></path>
-                </svg>
+            <button title="Add Contact" class="add-contact-button" id="add-contact">
+                <i class="ri-user-add-line"></i>
             </button>
         </div>
-        <ol class="chat-side-bar-unordered-list">
-            <li class="chat-side-bar-item">Ip - Nome do Usuario</li>
-        </ol>
-    </aside>
+        <ol class="chat-side-bar-unordered-list"></ol>
+    </nav>
     <main>
+        <header class="chat-header">
+            <span class="chat-header-info">Contact: <span class="chat-header-info-contact">-</span></span>
+        </header>
         <ul class="chat-container"></ul>
         <div class="chat-window">
             <span class="self-ip-address-span"></span>
@@ -51,6 +39,6 @@
             </div>
         </div>
     </main>
-    <script src="behaviors/ViewChat.js" defer></script>
+    <script src="behaviors/app/load.js"></script>
 </body>
 </html>

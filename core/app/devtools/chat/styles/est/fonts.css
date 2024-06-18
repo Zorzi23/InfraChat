@@ -1,4 +1,8 @@
 
+* {
+    font-family: system-ui, sans-serif !important;
+}
+
 .font-lg {
     font: 32px/48px "Noto Sans", sans-serif;
 }

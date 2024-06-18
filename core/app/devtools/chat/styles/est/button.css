@@ -41,7 +41,7 @@
   stroke-dashoffset: -32.42;
 }
 
-.add-button-1 {
+.add-contact-button {
   cursor: pointer;
   outline: unset;
   transition: transform 0.3s;
@@ -52,6 +52,8 @@
   height: fit-content;
   padding: unset;
   visibility: visible;
+  color: #949494;
+  font-size: 23px;
 }
 
 .icon {

@@ -1,6 +1,10 @@
 
 class SocketConnection {
 
+    /**
+     * 
+     * @returns {Number}
+     */
     static get DEFAULT_PORT() {
         return 2308;
     }
